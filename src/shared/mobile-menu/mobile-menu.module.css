@@ -1,0 +1,25 @@
+.mobileMenu {
+    padding-top: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #6d7eda 0%, #3a4374 100%) no-repeat;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+.mobileMenu.open {
+    transform: translateY(0);
+}
+
+.mobileMenuLink {
+    font-size: 24px;
+    color: #fff;
+}
